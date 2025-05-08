@@ -1,6 +1,6 @@
 
 
-    // Problem 1
+   
     function formatString(input: string, toUpper?: boolean): string{  
         if(toUpper === false ){
             return input.toLowerCase();
@@ -11,7 +11,6 @@
 
 
 
-    // Problem 2
     function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[] {
         return items.filter(item => item.rating >= 4);
     }
@@ -22,8 +21,7 @@
         { title: "Book C", rating: 5.0 }
     ];
     
-   
-    // Problem - 3
+  
     function concatenateArrays<T>(...arrays: T[][]){
       return arrays.reduce((acc, curr) => acc.concat(curr), [])
     }
@@ -33,7 +31,6 @@
 
 
 
-    // Problem - 4
    class Vehicle {
    private make: string;
    private year: number;
@@ -61,7 +58,7 @@
    const myCar = new Car("Toyota", 2020, "Corolla");
 
 
-   // Problem - 5
+ 
    function processValue(value: string | number): number{
      if(typeof value === "string"){
         return value.length
@@ -72,7 +69,6 @@
    processValue(8)
 
 
-   // Problem - 6
    interface Product {
     name: string;
     price: number;
@@ -101,7 +97,6 @@ getMostExpensiveProduct([])
 
 
 
-// Problem 7
 enum Day {
     Monday,
     Tuesday,
@@ -127,7 +122,6 @@ enum Day {
 
 
 
-//   Problem -8
 async function squareAsync(n: number): Promise<number> {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
